@@ -133,14 +133,6 @@ def diet(request: Request):
         name="diet.html",
         context={}
     )
-@app.get("/diet")
-def diet():
-    return templates.TemplateResponse(
-        request=request,
-        name="diet.html",
-        context={}
-    )
-
 
 @app.get("/bmi")
 def bmi(request: Request):
