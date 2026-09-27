@@ -33,3 +33,6 @@ FitBuddy/
 ├── templates/
 ├── .gitignore
 └── README.md
+## Demo
+
+[▶️ Watch the FitBuddy Demo](https://youtu.be/eK5Hk6iZAGo)
