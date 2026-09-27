@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy - Workout</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8f6;
+        text-align: center;
+        padding: 40px;
+    }
+
+    h1 {
+        color: #008c7a;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        background: white;
+        margin: 12px auto;
+        padding: 15px;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px #ccc;
+    }
+
+    a {
+        color: #008c7a;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Workout Plan 💪</h1>
+
+    <form action="/workout" method="post">
+
+    <p>
+        <label>Name:</label><br>
+        <input type="text" name="name" value="{{ name }}">
+    </p>
+
+    <p>
+        <label>Age:</label><br>
+        <input type="number" name="age" value="{{ age }}">
+    </p>
+
+    <p>
+        <label>Height (cm):</label><br>
+        <input type="number" step="0.1" name="height" value="{{ height }}">
+    </p>
+
+    <p>
+        <label>Weight (kg):</label><br>
+        <input type="number" step="0.1" name="weight" value="{{ weight }}">
+    </p>
+
+    <p>
+        <label>BMI:</label><br>
+        <input type="number" step="0.1" name="bmi" value="{{ bmi }}">
+    </p>
+
+    <button type="submit">Get Workout Plan</button>
+
+</form>
+<h3>BMI Category: {{ category }}</h3>
+    <h2>Beginner Workout</h2>
+
+    <ul>
+        <li>Walking - 20 minutes</li>
+        <li>Squats - 10 reps</li>
+        <li>Wall Push-ups - 10 reps</li>
+        <li>Stretching - 5 minutes</li>
+    </ul>
+
+    <a href="/">← Back to Home</a>
+
+</body>
+</html>

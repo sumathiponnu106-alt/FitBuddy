@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FitBuddy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7f6;
+            color: #222;
+        }
+
+        header {
+            background: #1f8f5f;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            color: #1f8f5f;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1f8f5f;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .features {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 260px;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #1f8f5f;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: #1f8f5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">FitBuddy 💪</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="/workout">Workout</a>
+            <a href="/diet">Diet</a>
+            <a href="/bmi">BMI</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to FitBuddy 💪</h1>
+
+        <p>Your personal fitness buddy for a healthier life.</p>
+
+        <a href="#setup" class="button">Get Started</a>
+<section id="setup" style="padding: 50px 20px; text-align: center; background: #eef8f3;">
+
+    <h2>Let's Get Started 💪</h2>
+
+    <p style="margin: 15px 0 25px;">
+        Tell us a little about yourself.
+    </p>
+<form action="/start" method="post">
+    <div style="max-width: 400px; margin: auto; background: white; padding: 25px; border-radius: 15px;">
+
+        <input type="text" name="name" placeholder="Your Name"
+            style="width:100%; padding:12px; margin-bottom:12px;">
+
+        <input type="number" name="age" placeholder="Age"
+            style="width:100%; padding:12px; margin-bottom:12px;">
+
+        <input type="number" name="height" placeholder="Height (cm)"
+            style="width:100%; padding:12px; margin-bottom:12px;">
+
+        <input type="number" name="weight" placeholder="Weight (kg)"
+            style="width:100%; padding:12px; margin-bottom:12px;">
+
+        <button style="width:100%; padding:12px; background:#1f8f5f; color:white; border:none; border-radius:8px; font-size:16px;">
+            Continue 💚
+        </button>
+
+    </div>
+    </form>
+
+</section>
+    <section class="features">
+
+        <h2>What can FitBuddy do?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🏋️</div>
+                <h3>Workout</h3>
+                <p>Find simple workouts and build your daily exercise routine.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🥗</div>
+                <h3>Diet</h3>
+                <p>Get healthy food ideas and simple diet guidance.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚖️</div>
+                <h3>BMI Calculator</h3>
+                <p>Calculate your BMI and understand your basic body measurements.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Progress</h3>
+                <p>Track your fitness journey and stay motivated.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 FitBuddy | Your Fitness Buddy 💚</p>
+    </footer>
+
+</body>
+</html>

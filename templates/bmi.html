@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy - BMI Calculator</title>
+</head>
+
+<body>
+
+    <h1>BMI Calculator 💪</h1>
+
+    <h2>What is BMI?</h2>
+
+    <p>
+        BMI (Body Mass Index) is a simple measurement
+        based on height and weight.
+    </p>
+
+    <h2>Calculate Your BMI</h2>
+
+    <form action="/calculate-bmi" method="post">
+
+        <label>Height (cm):</label>
+        <input type="number" name="height" step="0.1" required>
+
+        <br><br>
+
+        <label>Weight (kg):</label>
+        <input type="number" name="weight" step="0.1" required>
+
+        <br><br>
+
+        <button type="submit">Calculate BMI</button>
+
+    </form>
+
+    <h2>BMI Categories</h2>
+
+    <ul>
+        <li>Below 18.5 - Underweight</li>
+        <li>18.5 to 24.9 - Normal weight</li>
+        <li>25 to 29.9 - Overweight</li>
+        <li>30 and above - Obesity</li>
+    </ul>
+
+    <br>
+
+    <a href="/">← Back to Home</a>
+
+</body>
+</html>

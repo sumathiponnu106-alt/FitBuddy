@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy - Result</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0fff4;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        h1 {
+            color: #198754;
+            margin-bottom: 10px;
+        }
+
+        .success {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .info {
+            text-align: left;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            line-height: 1.9;
+        }
+
+        .bmi {
+            font-size: 32px;
+            font-weight: bold;
+            color: #198754;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: block;
+            margin-top: 25px;
+            padding: 14px;
+            background: #198754;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>FitBuddy 💚</h1>
+
+        <p class="success">
+            Profile saved successfully!
+        </p>
+
+        <div class="info">
+            <div><b>Name:</b> {{ name }}</div>
+            <div><b>Age:</b> {{ age }}</div>
+            <div><b>Height:</b> {{ height }} cm</div>
+            <div><b>Weight:</b> {{ weight }} kg</div>
+        </div>
+
+        <div class="bmi">
+            BMI: {{ bmi }}
+        </div>
+        <p><strong>BMI Category:</strong> {{ category }}</p>
+
+        <a href="/" class="button">
+            Recalculate 🔄
+        </a>
+
+    </div>
+
+</body>
+</html>
